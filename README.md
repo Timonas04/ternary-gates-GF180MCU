@@ -1,7 +1,6 @@
 # ternary-gates-GF180MCU
-ternary gate schematics and layouts for use as standard cells in ternary digital logic
+The goal is to make a list of standard cells for digital design. The following cells are planned:
 
-the goal is to make a list of standard cells for digital design. The following cells are planned:
 **parity 1:**
 * STI
 * cycle
@@ -14,6 +13,7 @@ the goal is to make a list of standard cells for digital design. The following c
 
 **parity 4:**
 * MUX (ternary select)
+
 
 The following gates have been made so far:
 * schematic + sim e( )
