@@ -24,8 +24,6 @@ C {lab_pin.sym} 210 -370 0 0 {name=p15 sig_type=std_logic lab=in}
 C {lab_pin.sym} 210 -190 0 0 {name=p16 sig_type=std_logic lab=in}
 C {lab_pin.sym} 550 -190 0 1 {name=p17 sig_type=std_logic lab=in}
 C {lab_pin.sym} 550 -370 0 1 {name=p18 sig_type=std_logic lab=in}
-C {lab_pin.sym} 380 -150 0 0 {name=p83 sig_type=std_logic lab=GND}
-C {lab_pin.sym} 380 -410 0 0 {name=p84 sig_type=std_logic lab=VDD}
 C {gf180mcu_fd_pr/nfet3_03v3.sym} 230 -250 0 0 {name=M225
 L=2.24u
 W=0.22u
@@ -116,3 +114,5 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
+C {lab_pin.sym} 380 -150 0 0 {name=p1 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 380 -410 0 0 {name=p2 sig_type=std_logic lab=VDD}

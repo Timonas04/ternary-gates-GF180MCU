@@ -1,5 +1,5 @@
 # ternary-gates-GF180MCU
-The goal is to make a list of standard cells for digital design. The following cells are planned:
+The goal is to make a list of standard cells for digital design. The following cells are currently planned:
 
 **parity 1:**
 * STI
@@ -14,12 +14,13 @@ The goal is to make a list of standard cells for digital design. The following c
 **parity 4:**
 * MUX (ternary select)
 
-
+<br>
 The following gates have been made so far:
-* schematic + sim e( )
-* layout          e( )
-* lvs simulations e( )
+* schematic + sim: STI, cycle, NMAX, NMIN, 
+* layout         :
+* lvs simulations:
 
-
+<br>
+Parameters characterizing the cells will be extracted allowing for design simulations on the gate level, instead of having to simulate on the transistor level. All parameters will be extracted from post layout simulations, and will include propagation delay, current draw, and setup and hold times. 
 
 

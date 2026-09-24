@@ -53,7 +53,7 @@ logy=0
 }
 N 720 -580 720 -560 {lab=0}
 C {title.sym} 170 -40 0 0 {name=l1 author="Timonas Juonys"}
-C {code_shown.sym} 16.74901121701339 -471.7671459816082 0 0 {name=s1 only_toplevel=false value="
+C {code_shown.sym} 6.74901121701339 -421.7671459816082 0 0 {name=s1 only_toplevel=false value="
 .global VDD GND BP BN
 .option temp=27
 .include /usr/local/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
@@ -68,7 +68,7 @@ Vb b 0 PWL(0 0 29.9n 0 30.1n 1.4 59.9n 1.4 60.1n 3.3 89.9n 3.3 90.1n 0 119.9n 0 
 .control
   save all
   tran 0.05n 250n
-  write NMIN_TB.raw
+  write NMAX_TB.raw
 .endc
 .end
 "}
@@ -76,9 +76,9 @@ C {gnd.sym} 720 -560 0 0 {name=l2 lab=0}
 C {lab_pin.sym} 720 -580 0 0 {name=p7 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 800 -590 0 0 {name=p1 sig_type=std_logic lab=a}
 C {lab_pin.sym} 800 -550 0 0 {name=p2 sig_type=std_logic lab=b}
-C {lab_pin.sym} 940 -570 0 1 {name=p5 sig_type=std_logic lab=out}
-C {xschem_designs/NMIN.sym} 810 -460 0 0 {name=x1}
+C {lab_pin.sym} 910 -570 0 1 {name=p5 sig_type=std_logic lab=out}
 C {launcher.sym} 1440 -480 0 0 {name=h5
 descr="load waves"
-tclcommand="xschem raw_read $netlist_dir/NMIN_TB.raw tran"
+tclcommand="xschem raw_read $netlist_dir/NMAX_TB.raw tran"
 }
+C {xschem_designs/NMAX.sym} 860 -470 0 0 {name=x1}
