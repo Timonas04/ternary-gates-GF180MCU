@@ -8,19 +8,22 @@ The goal is to make a list of standard cells for digital design. The following c
 **parity 2:**
 * NMIN
 * NMAX
-* half-adder
-* FFF
+* FF
+
+**parity 3:**
+* SUM
+* CARRY
 
 **parity 4:**
-* MUX (ternary select)
+* MUX3 (ternary select)
 
 <br>
 The following gates have been made so far:<br>
- schematic + sim: STI, cycle, NMAX, NMIN, FF, <br>
+schematic + sim: STI, cycle, NMAX, NMIN, FF, MUX3, <br>
  layout         :<br>
  lvs simulations:<br>
 <br>
 <br>
-Parameters characterizing the cells will be extracted allowing for design simulations on the gate level, instead of having to simulate on the transistor level. All parameters will be extracted from post layout simulations, and will include propagation delay, current draw, and setup and hold times. 
+Parameters characterizing the cells will be extracted allowing for design simulations on the gate level, instead of having to simulate on the transistor level. All parameters will be extracted from post layout simulations, and will include propagation delay, current draw, setup and hold times, and layout size. 
 
 
