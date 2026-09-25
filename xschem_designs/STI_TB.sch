@@ -52,7 +52,7 @@ logy=0
 color=12
 node=i(vdd)}
 C {title.sym} 170 -40 0 0 {name=l1 author="Timonas Juonys"}
-C {lab_pin.sym} 930 -370 0 0 {name=p6 sig_type=std_logic lab=in}
+C {lab_pin.sym} 1000 -370 0 0 {name=p6 sig_type=std_logic lab=in}
 C {code_shown.sym} 6.74901121701339 -461.7671459816082 0 0 {name=s1 only_toplevel=false value="
 .global VDD GND BP BN
 .option temp=27
@@ -71,11 +71,11 @@ Vin in 0 PWL(0 0 89.9n 0 90.1n 1.4 179.9n 1.4 180.1n 3.3 270n 3.3)
 .endc
 .end
 "}
-C {xschem_designs/STI.sym} 1080 -370 0 0 {name=x1}
 C {gnd.sym} 950 -330 0 0 {name=l2 lab=0}
 C {launcher.sym} 1470 -190 0 0 {name=h5
 descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/STI_TB.raw tran"
 }
 C {lab_pin.sym} 950 -330 0 0 {name=p1 sig_type=std_logic lab=GND}
-C {lab_pin.sym} 1230 -370 0 1 {name=p2 sig_type=std_logic lab=out}
+C {lab_pin.sym} 1100 -370 0 1 {name=p2 sig_type=std_logic lab=out}
+C {xschem_designs/STI.sym} 970 -270 0 0 {name=x1}

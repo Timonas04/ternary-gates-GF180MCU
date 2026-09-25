@@ -16,7 +16,7 @@ The goal is to make a list of standard cells for digital design. The following c
 
 <br>
 The following gates have been made so far:<br>
- schematic + sim: STI, cycle, NMAX, NMIN, <br>
+ schematic + sim: STI, cycle, NMAX, NMIN, FF, <br>
  layout         :<br>
  lvs simulations:<br>
 <br>
