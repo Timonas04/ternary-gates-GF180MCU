@@ -9,17 +9,14 @@ The goal is to make a list of standard cells for digital design. The following c
 * NMIN
 * NMAX
 * FF
-
-**parity 3:**
-* SUM
-* CARRY
+* half adder
 
 **parity 4:**
-* MUX3 (ternary select)
+* NMUX3 (ternary select)
 
 <br>
 The following gates have been made so far:<br>
-schematic + sim: STI, cycle, NMAX, NMIN, FF, MUX3, <br>
+schematic + sim: STI, cycle, NMAX, NMIN, FF, NMUX3, half adder<br>
  layout         :<br>
  lvs simulations:<br>
 <br>

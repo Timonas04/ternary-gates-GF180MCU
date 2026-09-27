@@ -124,4 +124,4 @@ C {lab_pin.sym} 280 -310 0 0 {name=p2 sig_type=std_logic lab=a}
 C {lab_pin.sym} 280 -290 0 0 {name=p3 sig_type=std_logic lab=b}
 C {lab_pin.sym} 280 -270 0 0 {name=p4 sig_type=std_logic lab=c}
 C {lab_pin.sym} 280 -250 0 0 {name=p5 sig_type=std_logic lab=sel}
-C {xschem_designs/MUX3.sym} 430 -280 0 0 {name=x1}
+C {xschem_designs/NMUX3.sym} 430 -280 0 0 {name=x1}
