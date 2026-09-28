@@ -16,9 +16,9 @@ The goal is to make a list of standard cells for digital design. The following c
 
 <br>
 The following gates have been made so far:<br>
-(✅ all done) schematic + sim: STI, cycle, NMAX, NMIN, FF, NMUX3, half adder<br>
- layout         :<br>
- lvs simulations:<br>
+(all done✅) schematic + sim: STI, cycle, NMAX, NMIN, FF, NMUX3, half adder<br>
+ layout         : STI<br>
+ lvs simulations: STI (netgen port mismatch)<br>
 <br>
 <br>
 Parameters characterizing the cells will be extracted allowing for design simulations on the gate level, instead of having to simulate on the transistor level. All parameters will be extracted from post layout simulations, and will include propagation delay, current draw, setup and hold times, and layout size. 

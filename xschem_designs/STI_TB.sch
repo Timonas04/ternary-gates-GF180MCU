@@ -24,15 +24,14 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 12 7 8 13"
+color="4 12 7 10"
 node="in
 out
-o2
-i1
-i2"}
+out_parx
+a"}
 B 2 1400 -1020 2200 -620 {flags=graph
 y1=-1.3e-05
-y2=2.2e-05
+y2=3e-05
 ypos1=0
 ypos2=2
 divy=5
@@ -57,19 +56,20 @@ C {code_shown.sym} 6.74901121701339 -461.7671459816082 0 0 {name=s1 only_topleve
 .global VDD GND BP BN
 .option temp=27
 .include /usr/local/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.include /root/projects/ternary-gates-GF180MCU/magic_designs/STI_parax.cir
 .lib /usr/local/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
 
 Vdd VDD 0 3.3
 Vbp BP VDD 2.7
 Vbn BN GND -2.7
 Vin in 0 PWL(0 0 89.9n 0 90.1n 1.4 179.9n 1.4 180.1n 3.3 270n 3.3)
+Vsw sw 0 PWL(0 0 250n 3.3)
 
 .control
   save all
   tran 0.05n 250n
   write STI_TB.raw
 .endc
-.end
 "}
 C {gnd.sym} 950 -330 0 0 {name=l2 lab=0}
 C {launcher.sym} 1470 -190 0 0 {name=h5
@@ -78,4 +78,9 @@ tclcommand="xschem raw_read $netlist_dir/STI_TB.raw tran"
 }
 C {lab_pin.sym} 950 -330 0 0 {name=p1 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 1100 -370 0 1 {name=p2 sig_type=std_logic lab=out}
-C {xschem_designs/STI.sym} 970 -270 0 0 {name=x1}
+C {xschem_designs/STI.sym} 1040 -480 0 0 {type=subckt
+format="@name @pinlist @schematic"
+schematic=STI_parax}
+C {lab_pin.sym} 1000 -480 0 0 {name=p3 sig_type=std_logic lab=in}
+C {lab_pin.sym} 1100 -480 0 1 {name=p4 sig_type=std_logic lab=out_parx}
+C {xschem_designs/STI.sym} 1040 -370 0 0 {name=x1}

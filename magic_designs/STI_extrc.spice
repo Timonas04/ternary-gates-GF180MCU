@@ -1,0 +1,11 @@
+* NGSPICE file created from STI.ext - technology: gf180mcuC
+
+.subckt STI out in VDD GND BP BN
+X0 a_3073_51# in GND GND nfet_03v3 ad=0.139p pd=1.21u as=0.1516p ps=1.64u w=0.22u l=0.28u
+X1 VDD in out BP pfet_06v0 ad=0.264p pd=2.08u as=0.264p ps=2.08u w=0.6u l=1.1u
+X2 out in GND BN nfet_06v0 ad=0.2196p pd=2.04u as=0.2196p ps=2.04u w=0.3u l=1.4u
+X3 out out a_3073_51# GND nfet_03v3 ad=0.1516p pd=1.64u as=0.139p ps=1.21u w=0.22u l=2.24u
+X4 a_3073_1177# in VDD VDD pfet_03v3 ad=0.1552p pd=1.29u as=0.1936p ps=1.76u w=0.44u l=0.28u
+X5 a_3073_1177# out out VDD pfet_03v3 ad=0.1552p pd=1.29u as=0.1516p ps=1.64u w=0.22u l=1.12u
+.ends
+

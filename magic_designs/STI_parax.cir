@@ -1,0 +1,30 @@
+* NGSPICE file created from STI.ext - technology: gf180mcuC
+
+.subckt STI_parax out in
+X0 a_3073_51# in GND GND nfet_03v3 ad=0.139p pd=1.21u as=0.1516p ps=1.64u w=0.22u l=0.28u
+X1 VDD in out BP pfet_06v0 ad=0.264p pd=2.08u as=0.264p ps=2.08u w=0.6u l=1.1u
+X2 out in GND BN nfet_06v0 ad=0.2196p pd=2.04u as=0.2196p ps=2.04u w=0.3u l=1.4u
+X3 out out a_3073_51# GND nfet_03v3 ad=0.1516p pd=1.64u as=0.139p ps=1.21u w=0.22u l=2.24u
+X4 a_3073_1177# in VDD VDD pfet_03v3 ad=0.1552p pd=1.29u as=0.1936p ps=1.76u w=0.44u l=0.28u
+X5 a_3073_1177# out out VDD pfet_03v3 ad=0.1552p pd=1.29u as=0.1516p ps=1.64u w=0.22u l=1.12u
+C0 out a_3073_51# 0.00453f
+C1 in a_3073_1177# 0.00335f
+C2 a_3073_1177# VDD 0.00817f
+C3 out a_3073_1177# 0.00546f
+C4 in VDD 0.38941f
+C5 in BN 0.30188f
+C6 in out 0.75914f
+C7 out VDD 0.32747f
+C8 out BN 0.00286f
+C9 in BP 0.23325f
+C10 VDD BP 0.17171f
+C11 out BP 0.02566f
+C12 in a_3073_51# 0.00212f
+C13 a_3073_51# VDD 0
+C14 a_3073_51# GND 1.2307f
+C15 a_3073_1177# GND 0
+C16 BN GND 0.37405f
+C17 VDD GND 1.22686f
+C18 BP GND 0.97857f
+.ends
+
