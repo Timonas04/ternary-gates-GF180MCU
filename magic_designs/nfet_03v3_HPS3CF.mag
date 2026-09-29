@@ -1,0 +1,77 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1790666201
+<< error_p >>
+rect -222 55 -211 69
+rect 211 55 222 69
+rect -314 -23 -303 23
+rect -257 -23 -246 -9
+rect 246 -23 257 23
+<< pwell >>
+rect -478 -232 478 232
+<< nmos >>
+rect -224 -22 224 22
+<< ndiff >>
+rect -316 23 -244 36
+rect -316 -23 -303 23
+rect -257 22 -244 23
+rect 244 23 316 36
+rect 244 22 257 23
+rect -257 -22 -224 22
+rect 224 -22 257 22
+rect -257 -23 -244 -22
+rect -316 -36 -244 -23
+rect 244 -23 257 -22
+rect 303 -23 316 23
+rect 244 -36 316 -23
+<< ndiffc >>
+rect -303 -23 -257 23
+rect 257 -23 303 23
+<< psubdiff >>
+rect -454 136 454 208
+rect -454 92 -382 136
+rect -454 -92 -441 92
+rect -395 -92 -382 92
+rect 382 92 454 136
+rect -454 -136 -382 -92
+rect 382 -92 395 92
+rect 441 -92 454 92
+rect 382 -136 454 -92
+rect -454 -208 454 -136
+<< psubdiffcont >>
+rect -441 -92 -395 92
+rect 395 -92 441 92
+<< polysilicon >>
+rect -224 101 224 114
+rect -224 55 -211 101
+rect 211 55 224 101
+rect -224 22 224 55
+rect -224 -55 224 -22
+rect -224 -101 -211 -55
+rect 211 -101 224 -55
+rect -224 -114 224 -101
+<< polycontact >>
+rect -211 55 211 101
+rect -211 -101 211 -55
+<< metal1 >>
+rect -441 149 441 195
+rect -441 92 -395 149
+rect -222 55 -211 101
+rect 211 55 222 101
+rect 395 92 441 149
+rect -314 -23 -303 23
+rect -257 -23 -246 23
+rect 246 -23 257 23
+rect 303 -23 314 23
+rect -441 -149 -395 -92
+rect -222 -101 -211 -55
+rect 211 -101 222 -55
+rect 395 -149 441 -92
+rect -441 -195 441 -149
+<< properties >>
+string FIXED_BBOX -418 -172 418 172
+string gencell nfet_03v3
+string library gf180mcu
+string parameters w 0.22 l 2.24 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 1 compatible {nfet_03v3 nfet_05v0 nfet_06v0 nfet_06v0_nvt} ad {int((nf+1)/2) * W/nf * 0.18u} as {int((nf+2)/2) * W/nf * 0.18u} pd {2*int((nf+1)/2) * (W/nf + 0.18u)} ps {2*int((nf+2)/2) * (W/nf + 0.18u)} nrd {0.18u / W} nrs {0.18u / W} sa 0 sb 0 sd 0
+<< end >>

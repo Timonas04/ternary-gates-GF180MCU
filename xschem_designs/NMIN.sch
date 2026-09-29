@@ -40,8 +40,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {gf180mcu_fd_pr/pfet3_03v3.sym} 390 -380 0 0 {name=M22
-L=2.24u
-W=0.44u
+L=1.12u
+W=0.22u
 body=VDD
 nf=1
 m=1

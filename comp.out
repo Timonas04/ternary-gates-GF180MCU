@@ -1,4 +1,54 @@
 
+Cell pfet_03v3 (1) disconnected node: drain
+Cell pfet_03v3 (1) disconnected node: gate
+Cell pfet_03v3 (1) disconnected node: source
+Cell pfet_03v3 (1) disconnected node: bulk
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |drain                                      
+(no matching pin)                          |drain                                      
+(no matching pin)                          |gate                                       
+(no matching pin)                          |gate                                       
+(no matching pin)                          |source                                     
+(no matching pin)                          |source                                     
+(no matching pin)                          |bulk                                       
+(no matching pin)                          |bulk                                       
+1                                          |(no matching pin)                          
+2                                          |(no matching pin)                          
+3                                          |(no matching pin)                          
+4                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Cell nfet_06v0 (1) disconnected node: drain
+Cell nfet_06v0 (1) disconnected node: gate
+Cell nfet_06v0 (1) disconnected node: source
+Cell nfet_06v0 (1) disconnected node: bulk
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_06v0                       |Circuit 2: nfet_06v0                       
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |drain                                      
+(no matching pin)                          |drain                                      
+(no matching pin)                          |gate                                       
+(no matching pin)                          |gate                                       
+(no matching pin)                          |source                                     
+(no matching pin)                          |source                                     
+(no matching pin)                          |bulk                                       
+(no matching pin)                          |bulk                                       
+1                                          |(no matching pin)                          
+2                                          |(no matching pin)                          
+3                                          |(no matching pin)                          
+4                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_06v0 and nfet_06v0 are equivalent.
+
 Cell nfet_03v3 (1) disconnected node: drain
 Cell nfet_03v3 (1) disconnected node: gate
 Cell nfet_03v3 (1) disconnected node: source
@@ -49,262 +99,315 @@ Circuit 1: pfet_06v0                       |Circuit 2: pfet_06v0
 Cell pin lists are equivalent.
 Device classes pfet_06v0 and pfet_06v0 are equivalent.
 
-Cell nfet_06v0 (1) disconnected node: drain
-Cell nfet_06v0 (1) disconnected node: gate
-Cell nfet_06v0 (1) disconnected node: source
-Cell nfet_06v0 (1) disconnected node: bulk
-Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: nfet_06v0                       |Circuit 2: nfet_06v0                       
--------------------------------------------|-------------------------------------------
-(no matching pin)                          |drain                                      
-(no matching pin)                          |drain                                      
-(no matching pin)                          |gate                                       
-(no matching pin)                          |gate                                       
-(no matching pin)                          |source                                     
-(no matching pin)                          |source                                     
-(no matching pin)                          |bulk                                       
-(no matching pin)                          |bulk                                       
-1                                          |(no matching pin)                          
-2                                          |(no matching pin)                          
-3                                          |(no matching pin)                          
-4                                          |(no matching pin)                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes nfet_06v0 and nfet_06v0 are equivalent.
-
-Cell pfet_03v3 (1) disconnected node: drain
-Cell pfet_03v3 (1) disconnected node: gate
-Cell pfet_03v3 (1) disconnected node: source
-Cell pfet_03v3 (1) disconnected node: bulk
-Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
--------------------------------------------|-------------------------------------------
-(no matching pin)                          |drain                                      
-(no matching pin)                          |drain                                      
-(no matching pin)                          |gate                                       
-(no matching pin)                          |gate                                       
-(no matching pin)                          |source                                     
-(no matching pin)                          |source                                     
-(no matching pin)                          |bulk                                       
-(no matching pin)                          |bulk                                       
-1                                          |(no matching pin)                          
-2                                          |(no matching pin)                          
-3                                          |(no matching pin)                          
-4                                          |(no matching pin)                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes pfet_03v3 and pfet_03v3 are equivalent.
-
 Subcircuit summary:
-Circuit 1: STI                             |Circuit 2: STI                             
+Circuit 1: NMIN                            |Circuit 2: NMIN                            
 -------------------------------------------|-------------------------------------------
-nfet_03v3 (2)                              |nfet_03v3 (2)                              
-pfet_06v0 (1)                              |pfet_06v0 (1)                              
-nfet_06v0 (1)                              |nfet_06v0 (1)                              
-pfet_03v3 (2)                              |pfet_03v3 (2)                              
-Number of devices: 6                       |Number of devices: 6                       
-Number of nets: 32                         |Number of nets: 32                         
+pfet_03v3 (3)                              |pfet_03v3 (3)                              
+nfet_06v0 (2)                              |nfet_06v0 (2)                              
+nfet_03v3 (3)                              |nfet_03v3 (3)                              
+pfet_06v0 (2)                              |pfet_06v0 (2)                              
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 51                         |Number of nets: 51                         
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: STI                             |Circuit 2: STI                             
+Circuit 1: NMIN                            |Circuit 2: NMIN                            
 
 ---------------------------------------------------------------------------------------
-Net: dummy_32                              |Net: dummy_32                              
-  pfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy4 = 1                     
-                                           |                                           
-Net: dummy_31                              |Net: dummy_31                              
-  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
-                                           |                                           
-Net: dummy_30                              |Net: dummy_30                              
-  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
-                                           |                                           
-Net: dummy_29                              |Net: dummy_29                              
-  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
-                                           |                                           
-Net: dummy_28                              |Net: dummy_28                              
-  pfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy4 = 1                     
-                                           |                                           
-Net: dummy_27                              |Net: dummy_27                              
-  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
-                                           |                                           
-Net: dummy_26                              |Net: dummy_26                              
-  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
-                                           |                                           
-Net: dummy_25                              |Net: dummy_25                              
-  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
-                                           |                                           
-Net: dummy_24                              |Net: dummy_24                              
-  nfet_06v0/proxybulk = 1                  |  nfet_06v0/proxy4 = 1                     
-                                           |                                           
-Net: dummy_23                              |Net: dummy_23                              
-  nfet_06v0/proxysource = 1                |  nfet_06v0/proxy3 = 1                     
-                                           |                                           
-Net: dummy_22                              |Net: dummy_22                              
-  nfet_06v0/proxygate = 1                  |  nfet_06v0/proxy2 = 1                     
-                                           |                                           
-Net: dummy_21                              |Net: dummy_21                              
-  nfet_06v0/proxydrain = 1                 |  nfet_06v0/proxy1 = 1                     
-                                           |                                           
-Net: dummy_20                              |Net: dummy_20                              
+Net: dummy_51                              |Net: dummy_51                              
   pfet_06v0/proxybulk = 1                  |  pfet_06v0/proxy4 = 1                     
                                            |                                           
-Net: dummy_19                              |Net: dummy_19                              
+Net: dummy_47                              |Net: dummy_47                              
+  pfet_06v0/proxybulk = 1                  |  pfet_06v0/proxy4 = 1                     
+                                           |                                           
+Net: dummy_50                              |Net: dummy_50                              
   pfet_06v0/proxysource = 1                |  pfet_06v0/proxy3 = 1                     
                                            |                                           
-Net: dummy_18                              |Net: dummy_18                              
+Net: dummy_46                              |Net: dummy_46                              
+  pfet_06v0/proxysource = 1                |  pfet_06v0/proxy3 = 1                     
+                                           |                                           
+Net: dummy_49                              |Net: dummy_49                              
   pfet_06v0/proxygate = 1                  |  pfet_06v0/proxy2 = 1                     
                                            |                                           
-Net: dummy_17                              |Net: dummy_17                              
+Net: dummy_45                              |Net: dummy_45                              
+  pfet_06v0/proxygate = 1                  |  pfet_06v0/proxy2 = 1                     
+                                           |                                           
+Net: dummy_48                              |Net: dummy_48                              
   pfet_06v0/proxydrain = 1                 |  pfet_06v0/proxy1 = 1                     
                                            |                                           
-Net: dummy_16                              |Net: dummy_16                              
+Net: dummy_44                              |Net: dummy_44                              
+  pfet_06v0/proxydrain = 1                 |  pfet_06v0/proxy1 = 1                     
+                                           |                                           
+Net: dummy_43                              |Net: dummy_43                              
   nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: dummy_42                              |Net: dummy_42                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: dummy_41                              |Net: dummy_41                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: dummy_40                              |Net: dummy_40                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: dummy_39                              |Net: dummy_39                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: dummy_38                              |Net: dummy_38                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: dummy_37                              |Net: dummy_37                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: dummy_36                              |Net: dummy_36                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: dummy_35                              |Net: dummy_35                              
+  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: dummy_34                              |Net: dummy_34                              
+  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: dummy_33                              |Net: dummy_33                              
+  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: dummy_32                              |Net: dummy_32                              
+  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+                                           |                                           
+Net: dummy_31                              |Net: dummy_31                              
+  nfet_06v0/proxybulk = 1                  |  nfet_06v0/proxy4 = 1                     
+                                           |                                           
+Net: dummy_30                              |Net: dummy_30                              
+  nfet_06v0/proxysource = 1                |  nfet_06v0/proxy3 = 1                     
+                                           |                                           
+Net: dummy_29                              |Net: dummy_29                              
+  nfet_06v0/proxygate = 1                  |  nfet_06v0/proxy2 = 1                     
+                                           |                                           
+Net: dummy_28                              |Net: dummy_28                              
+  nfet_06v0/proxydrain = 1                 |  nfet_06v0/proxy1 = 1                     
+                                           |                                           
+Net: dummy_27                              |Net: dummy_27                              
+  nfet_06v0/proxybulk = 1                  |  nfet_06v0/proxy4 = 1                     
+                                           |                                           
+Net: dummy_26                              |Net: dummy_26                              
+  nfet_06v0/proxysource = 1                |  nfet_06v0/proxy3 = 1                     
+                                           |                                           
+Net: dummy_25                              |Net: dummy_25                              
+  nfet_06v0/proxygate = 1                  |  nfet_06v0/proxy2 = 1                     
+                                           |                                           
+Net: dummy_24                              |Net: dummy_24                              
+  nfet_06v0/proxydrain = 1                 |  nfet_06v0/proxy1 = 1                     
+                                           |                                           
+Net: dummy_23                              |Net: dummy_23                              
+  pfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy4 = 1                     
                                            |                                           
 Net: dummy_15                              |Net: dummy_15                              
-  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+  pfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy4 = 1                     
+                                           |                                           
+Net: dummy_22                              |Net: dummy_22                              
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
                                            |                                           
 Net: dummy_14                              |Net: dummy_14                              
-  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
+                                           |                                           
+Net: dummy_21                              |Net: dummy_21                              
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
                                            |                                           
 Net: dummy_13                              |Net: dummy_13                              
-  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: dummy_20                              |Net: dummy_20                              
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
                                            |                                           
 Net: dummy_12                              |Net: dummy_12                              
-  nfet_03v3/proxybulk = 1                  |  nfet_03v3/proxy4 = 1                     
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
                                            |                                           
-Net: dummy_11                              |Net: dummy_11                              
-  nfet_03v3/proxysource = 1                |  nfet_03v3/proxy3 = 1                     
+Net: dummy_19                              |Net: dummy_19                              
+  pfet_03v3/proxybulk = 1                  |  pfet_03v3/proxy4 = 1                     
                                            |                                           
-Net: dummy_10                              |Net: dummy_10                              
-  nfet_03v3/proxygate = 1                  |  nfet_03v3/proxy2 = 1                     
+Net: dummy_18                              |Net: dummy_18                              
+  pfet_03v3/proxysource = 1                |  pfet_03v3/proxy3 = 1                     
                                            |                                           
-Net: dummy_9                               |Net: dummy_9                               
-  nfet_03v3/proxydrain = 1                 |  nfet_03v3/proxy1 = 1                     
+Net: dummy_17                              |Net: dummy_17                              
+  pfet_03v3/proxygate = 1                  |  pfet_03v3/proxy2 = 1                     
+                                           |                                           
+Net: dummy_16                              |Net: dummy_16                              
+  pfet_03v3/proxydrain = 1                 |  pfet_03v3/proxy1 = 1                     
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: a_3943_n2254#                         |Net: net4                                  
+  nfet_06v0/(1|3) = 2                      |  nfet_03v3/(drain|source) = 2             
                                            |                                           
 Net: BN                                    |Net: BN                                    
-  nfet_06v0/4 = 1                          |  nfet_06v0/bulk = 1                       
+  nfet_06v0/4 = 2                          |  nfet_06v0/bulk = 2                       
+                                           |                                           
+Net: a_4042_n602#                          |Net: net3                                  
+  nfet_03v3/(1|3) = 2                      |  nfet_06v0/(drain|source) = 2             
+                                           |                                           
+Net: a_4042_n750#                          |Net: net2                                  
+  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(drain|source) = 2             
                                            |                                           
 Net: BP                                    |Net: BP                                    
-  pfet_06v0/4 = 1                          |  pfet_06v0/bulk = 1                       
+  pfet_06v0/4 = 2                          |  pfet_06v0/bulk = 2                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: b                                     |Net: b                                     
+  nfet_06v0/2 = 1                          |  pfet_06v0/gate = 1                       
+  nfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
+  pfet_06v0/2 = 1                          |  nfet_06v0/gate = 1                       
+  pfet_03v3/2 = 1                          |  nfet_03v3/gate = 1                       
+                                           |                                           
+Net: a                                     |Net: a                                     
+  nfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
+  nfet_06v0/2 = 1                          |  pfet_06v0/gate = 1                       
+  pfet_03v3/2 = 1                          |  nfet_06v0/gate = 1                       
+  pfet_06v0/2 = 1                          |  nfet_03v3/gate = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: GND                                   |Net: GND                                   
+  nfet_06v0/(1|3) = 1                      |  nfet_03v3/bulk = 3                       
+  nfet_03v3/(1|3) = 1                      |  nfet_06v0/(drain|source) = 1             
+  nfet_03v3/4 = 3                          |  nfet_03v3/(drain|source) = 1             
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Net: out                                   |Net: out                                   
-  pfet_06v0/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
-  nfet_06v0/(1|3) = 1                      |  nfet_03v3/gate = 1                       
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
-  nfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_03v3/2 = 1                          |  pfet_06v0/(drain|source) = 1             
-  pfet_03v3/(1|3) = 1                      |  nfet_06v0/(drain|source) = 1             
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: in                                    |Net: in                                    
-  nfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_06v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_06v0/2 = 1                          |  pfet_06v0/gate = 1                       
-  pfet_03v3/2 = 1                          |  nfet_06v0/gate = 1                       
+  pfet_03v3/2 = 1                          |  pfet_03v3/(drain|source) = 1             
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/gate = 1                       
+  nfet_03v3/(1|3) = 1                      |  pfet_06v0/(drain|source) = 2             
+  nfet_03v3/2 = 1                          |  nfet_03v3/(drain|source) = 1             
+  pfet_06v0/(1|3) = 2                      |  nfet_03v3/gate = 1                       
+  nfet_06v0/(1|3) = 1                      |  nfet_06v0/(drain|source) = 1             
                                            |                                           
 Net: VDD                                   |Net: VDD                                   
-  pfet_06v0/(1|3) = 1                      |  pfet_03v3/bulk = 2                       
-  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
-  pfet_03v3/4 = 2                          |  pfet_06v0/(drain|source) = 1             
-                                           |                                           
-Net: GND                                   |Net: GND                                   
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/bulk = 2                       
-  nfet_03v3/4 = 2                          |  nfet_03v3/(drain|source) = 1             
-  nfet_06v0/(1|3) = 1                      |  nfet_06v0/(drain|source) = 1             
+  pfet_03v3/4 = 3                          |  pfet_03v3/(drain|source) = 2             
+  pfet_06v0/(1|3) = 2                      |  pfet_03v3/bulk = 3                       
+  pfet_03v3/(1|3) = 2                      |  pfet_06v0/(drain|source) = 2             
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: a_3073_1177#                          |Net: net2                                  
-  pfet_03v3/(1|3) = 2                      |  pfet_03v3/(drain|source) = 2             
-                                           |                                           
-Net: a_3073_51#                            |Net: net1                                  
-  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(drain|source) = 2             
+Net: a_4020_92#                            |Net: net1                                  
+  pfet_03v3/(1|3) = 3                      |  pfet_03v3/(drain|source) = 3             
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: STI                             |Circuit 2: STI                             
+Circuit 1: NMIN                            |Circuit 2: NMIN                            
 
 ---------------------------------------------------------------------------------------
-Instance: pfet_03v3:5                      |Instance: pfet_03v3:237                    
-  (1,3) = (6,2)                            |  proxy1 = 1                               
-  2 = 6                                    |  proxy2 = 1                               
-  4 = 4                                    |  proxy3 = 1                               
+Instance: pfet_06v0:9                      |Instance: pfet_06v0:24                     
+  (1,3) = (7,7)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 2                                    |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
-  proxygate = 1                            |  (drain,source) = (4,2)                   
+  proxygate = 1                            |  (drain,source) = (7,7)                   
   proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 4                                 
+  proxybulk = 1                            |  bulk = 2                                 
                                            |                                           
-Instance: pfet_03v3:4                      |Instance: pfet_03v3:226                    
-  (1,3) = (4,2)                            |  proxy1 = 1                               
+Instance: pfet_06v0:5                      |Instance: pfet_06v0:23                     
+  (1,3) = (7,7)                            |  proxy1 = 1                               
   2 = 4                                    |  proxy2 = 1                               
-  4 = 4                                    |  proxy3 = 1                               
+  4 = 2                                    |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
-  proxygate = 1                            |  (drain,source) = (6,2)                   
-  proxysource = 1                          |  gate = 6                                 
-  proxybulk = 1                            |  bulk = 4                                 
+  proxygate = 1                            |  (drain,source) = (7,7)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 2                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Instance: nfet_06v0:2                      |Instance: nfet_06v0:242                    
-  (1,3) = (6,4)                            |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 1                                    |  proxy3 = 1                               
+Instance: nfet_03v3:4                      |Instance: nfet_03v3:30                     
+  (1,3) = (7,2)                            |  proxy1 = 1                               
+  2 = 7                                    |  proxy2 = 1                               
+  4 = 5                                    |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
-  proxygate = 1                            |  (drain,source) = (6,4)                   
+  proxygate = 1                            |  (drain,source) = (2,2)                   
   proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 1                                 
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: pfet_06v0:1                      |Instance: pfet_06v0:241                    
-  (1,3) = (6,4)                            |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 1                                    |  proxy3 = 1                               
-  proxydrain = 1                           |  proxy4 = 1                               
-  proxygate = 1                            |  (drain,source) = (6,4)                   
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 1                                 
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: nfet_03v3:3                      |Instance: nfet_03v3:238                    
-  (1,3) = (6,2)                            |  proxy1 = 1                               
-  2 = 6                                    |  proxy2 = 1                               
-  4 = 4                                    |  proxy3 = 1                               
-  proxydrain = 1                           |  proxy4 = 1                               
-  proxygate = 1                            |  (drain,source) = (4,2)                   
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 4                                 
+  proxybulk = 1                            |  bulk = 5                                 
                                            |                                           
-Instance: nfet_03v3:0                      |Instance: nfet_03v3:225                    
-  (1,3) = (4,2)                            |  proxy1 = 1                               
+Instance: nfet_03v3:3                      |Instance: nfet_03v3:29                     
+  (1,3) = (2,2)                            |  proxy1 = 1                               
   2 = 4                                    |  proxy2 = 1                               
-  4 = 4                                    |  proxy3 = 1                               
+  4 = 5                                    |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
-  proxygate = 1                            |  (drain,source) = (6,2)                   
-  proxysource = 1                          |  gate = 6                                 
-  proxybulk = 1                            |  bulk = 4                                 
+  proxygate = 1                            |  (drain,source) = (5,2)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 5                                 
+                                           |                                           
+Instance: nfet_03v3:2                      |Instance: nfet_03v3:26                     
+  (1,3) = (5,2)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 5                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (7,2)                   
+  proxysource = 1                          |  gate = 7                                 
+  proxybulk = 1                            |  bulk = 5                                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: nfet_06v0:7                      |Instance: nfet_06v0:28                     
+  (1,3) = (7,2)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 2                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (7,2)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 2                                 
+                                           |                                           
+Instance: nfet_06v0:1                      |Instance: nfet_06v0:27                     
+  (1,3) = (5,2)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 2                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (5,2)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 2                                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: pfet_03v3:8                      |Instance: pfet_03v3:25                     
+  (1,3) = (7,3)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 7                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (7,3)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 7                                 
+                                           |                                           
+Instance: pfet_03v3:6                      |Instance: pfet_03v3:21                     
+  (1,3) = (7,3)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 7                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (7,3)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 7                                 
+                                           |                                           
+Instance: pfet_03v3:0                      |Instance: pfet_03v3:22                     
+  (1,3) = (7,3)                            |  proxy1 = 1                               
+  2 = 7                                    |  proxy2 = 1                               
+  4 = 7                                    |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (7,3)                   
+  proxysource = 1                          |  gate = 7                                 
+  proxybulk = 1                            |  bulk = 7                                 
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
 
 Subcircuit pins:
-Circuit 1: STI                             |Circuit 2: STI                             
+Circuit 1: NMIN                            |Circuit 2: NMIN                            
 -------------------------------------------|-------------------------------------------
-BN                                         |BN                                         
-BP                                         |BP                                         
-out                                        |out                                        
-VDD                                        |in **Mismatch**                            
-GND                                        |VDD **Mismatch**                           
-in                                         |GND **Mismatch**                           
+BP                                         |(no pin, node is net4)                     
+BN                                         |(no pin, node is net2)                     
+a                                          |b **Mismatch**                             
+b                                          |a **Mismatch**                             
+GND                                        |GND                                        
+VDD                                        |out **Mismatch**                           
+out                                        |VDD **Mismatch**                           
+(no pin, node is a_3943_n2254#)            |BN                                         
+(no pin, node is a_3943_n2254#)            |BP                                         
 ---------------------------------------------------------------------------------------
-Cell pin lists for STI and STI altered to match.
-Device classes STI and STI are equivalent.
+Cell pin lists for NMIN and NMIN altered to match.
+Device classes NMIN and NMIN are equivalent.
 
 Final result: Top level cell failed pin matching.

@@ -1,0 +1,15 @@
+* NGSPICE file created from NMIN.ext - technology: gf180mcuC
+
+.subckt NMIN out a b GND BN VDD BP
+X0 a_4020_92# out out VDD pfet_03v3 ad=0.1516p pd=1.64u as=0.1516p ps=1.64u w=0.22u l=1.12u
+X1 GND b a_3943_n2254# BN nfet_06v0 ad=0.2196p pd=2.04u as=0.2196p ps=2.04u w=0.3u l=1.4u
+X2 GND b a_4042_n602# GND nfet_03v3 ad=0.1692p pd=1.8u as=26.4f ps=0.46u w=0.22u l=0.28u
+X3 a_4042_n602# a a_4042_n750# GND nfet_03v3 ad=26.4f pd=0.46u as=0.2362p ps=1.75u w=0.22u l=0.28u
+X4 out out a_4042_n750# GND nfet_03v3 ad=0.1516p pd=1.64u as=0.2362p ps=1.75u w=0.22u l=2.24u
+X5 VDD b out BP pfet_06v0 ad=0.264p pd=2.08u as=0.264p ps=2.08u w=0.6u l=1.1u
+X6 a_4020_92# b VDD VDD pfet_03v3 ad=0.1936p pd=1.76u as=0.1936p ps=1.76u w=0.44u l=0.28u
+X7 out a a_3943_n2254# BN nfet_06v0 ad=0.2196p pd=2.04u as=0.2196p ps=2.04u w=0.3u l=1.4u
+X8 a_4020_92# a VDD VDD pfet_03v3 ad=0.1936p pd=1.76u as=0.1936p ps=1.76u w=0.44u l=0.28u
+X9 VDD a out BP pfet_06v0 ad=0.264p pd=2.08u as=0.264p ps=2.08u w=0.6u l=1.1u
+.ends
+
