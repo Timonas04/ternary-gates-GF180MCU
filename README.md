@@ -17,7 +17,7 @@ The goal is to make a list of standard cells for digital design. The following c
 <br>
 The following gates have been made so far:<br>
 (all done✅) schematic + sim: STI, cycle, NMAX, NMIN, FF, NMUX3, half adder<br>
- layout         : STI<br>
+ layout         : STI, NMIN<br>
  lvs simulations: STI (netgen port mismatch)<br>
 <br>
 <br>
