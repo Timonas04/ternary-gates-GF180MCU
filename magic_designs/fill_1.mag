@@ -1,0 +1,22 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1791744892
+<< nwell >>
+rect 3635 257 3807 576
+rect 3635 -123 3807 137
+<< pwell >>
+rect 3635 -413 3807 -148
+<< metal1 >>
+rect 3665 483 3777 539
+rect 3665 -413 3777 -357
+<< labels >>
+rlabel metal1 3665 -413 3777 -357 0 GND
+port 1 nsew ground bidirectional
+rlabel metal1 3665 483 3777 539 0 VDD
+port 2 nsew power bidirectional
+<< properties >>
+string FIXED_BBOX 3665 -385 3777 511
+string LEFclass core
+string LEFsite site056um
+<< end >>

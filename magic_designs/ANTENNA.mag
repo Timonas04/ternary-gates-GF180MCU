@@ -1,0 +1,50 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1791817411
+<< nwell >>
+rect -106 642 218 980
+rect -106 262 218 522
+<< pwell >>
+rect -106 -28 218 237
+<< mvpdiode >>
+rect 14 821 98 860
+rect 14 775 33 821
+rect 79 775 98 821
+rect 14 762 98 775
+<< mvndiode >>
+rect 17 129 95 142
+rect 17 83 33 129
+rect 79 83 95 129
+rect 17 36 95 83
+<< mvpdiodec >>
+rect 33 775 79 821
+<< mvndiodec >>
+rect 33 83 79 129
+<< metal1 >>
+rect 0 868 112 924
+rect 22 775 33 821
+rect 79 775 90 821
+rect 28 129 84 775
+rect 22 83 33 129
+rect 79 83 90 129
+rect 0 -28 112 28
+<< labels >>
+rlabel metal1 0 -28 112 28 0 GND
+port 1 nsew ground bidirectional
+rlabel metal1 0 868 112 924 0 VDD
+port 2 nsew power bidirectional
+rlabel metal1 28 84 84 812 0 I
+port 3 nsew signal input
+<< properties >>
+string FIXED_BBOX 0 0 112 896
+string GDS_END 1248338
+string GDS_FILE $PDKPATH/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds
+string GDS_START 1246732
+string LEFclass core
+string LEFsite site056um
+string LEFsymmetry X Y
+string MASKHINTS_DUALGATE -56 634 280 840 -56 424 -12 634 156 424 280 634 -56 280 280 424 -56 70 -12 280 156 70 280 280 -56 -56 280 70
+string MASKHINTS_NPLUS -40 264 264 352 -40 86 4 264 140 86 264 264 -40 -40 264 86
+string MASKHINTS_PPLUS -40 618 264 824 -40 440 4 618 140 440 264 618 -40 352 264 440
+<< end >>

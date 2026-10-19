@@ -1,0 +1,79 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1791742931
+<< nwell >>
+rect -7 642 400 961
+rect -6 262 398 522
+<< pwell >>
+rect -6 -28 398 237
+<< nmos >>
+rect 168 118 224 162
+<< pmos >>
+rect 168 348 224 436
+<< ndiff >>
+rect 76 163 148 176
+rect 76 117 89 163
+rect 135 162 148 163
+rect 244 163 316 176
+rect 244 162 257 163
+rect 135 118 168 162
+rect 224 118 257 162
+rect 135 117 148 118
+rect 76 104 148 117
+rect 244 117 257 118
+rect 303 117 316 163
+rect 244 104 316 117
+<< pdiff >>
+rect 80 423 168 436
+rect 80 361 93 423
+rect 139 361 168 423
+rect 80 348 168 361
+rect 224 423 312 436
+rect 224 361 253 423
+rect 299 361 312 423
+rect 224 348 312 361
+<< ndiffc >>
+rect 89 117 135 163
+rect 257 117 303 163
+<< pdiffc >>
+rect 93 361 139 423
+rect 253 361 299 423
+<< polysilicon >>
+rect 168 436 224 480
+rect 168 286 224 348
+rect 160 273 232 286
+rect 160 227 173 273
+rect 219 227 232 273
+rect 160 214 232 227
+rect 168 162 224 214
+rect 168 74 224 118
+<< polycontact >>
+rect 173 227 219 273
+<< metal1 >>
+rect 0 868 336 924
+rect 93 423 139 868
+rect 252 423 308 476
+rect 252 420 253 423
+rect 93 350 139 361
+rect 299 420 308 423
+rect 253 350 299 361
+rect 162 227 173 273
+rect 219 227 303 273
+rect 89 163 135 174
+rect 89 28 135 117
+rect 257 163 303 227
+rect 257 106 303 117
+rect 0 -28 336 28
+<< labels >>
+rlabel metal1 0 -28 336 28 0 GND
+port 6 nsew ground bidirectional
+rlabel metal1 0 868 336 924 0 VDD
+port 5 nsew power bidirectional
+rlabel metal1 252 420 308 476 0 ZN
+port 7 nsew signal output
+<< properties >>
+string FIXED_BBOX 0 0 336 896
+string LEFclass core
+string LEFsite site056um
+<< end >>

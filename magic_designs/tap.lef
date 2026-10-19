@@ -1,0 +1,50 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO TAP_CELL
+  CLASS core ;
+  FOREIGN TAP_CELL ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 0.560 BY 4.480 ;
+  SITE site056um ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.140 1.540 0.420 2.380 ;
+    END
+  END VDD
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 0.560 0.140 ;
+    END
+  END GND
+  PIN BP
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.140 3.780 0.420 4.060 ;
+    END
+  END BP
+  OBS
+      LAYER Nwell ;
+        RECT -0.160 3.210 0.720 4.805 ;
+        RECT 0.000 2.610 0.560 3.210 ;
+        RECT -0.160 1.310 0.720 2.610 ;
+        RECT 0.000 1.185 0.560 1.310 ;
+      LAYER Pwell ;
+        RECT -0.160 -0.140 0.720 1.185 ;
+      LAYER Metal1 ;
+        RECT 0.000 4.340 0.560 4.620 ;
+        RECT 0.000 2.680 0.560 3.480 ;
+        RECT 0.000 0.440 0.560 1.240 ;
+  END
+END TAP_CELL
+END LIBRARY
+

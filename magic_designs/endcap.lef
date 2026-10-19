@@ -1,0 +1,38 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO endcap
+  CLASS core ;
+  FOREIGN endcap ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 0.560 BY 4.480 ;
+  SITE site056um ;
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 0.560 0.140 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 0.560 4.620 ;
+    END
+  END VDD
+  OBS
+      LAYER Nwell ;
+        RECT -0.150 3.210 0.710 4.805 ;
+        RECT 0.000 2.610 0.560 3.210 ;
+        RECT -0.150 1.310 0.710 2.610 ;
+        RECT 0.000 1.185 0.560 1.310 ;
+      LAYER Pwell ;
+        RECT -0.150 -0.140 0.710 1.185 ;
+  END
+END endcap
+END LIBRARY
+
