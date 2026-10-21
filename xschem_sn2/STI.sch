@@ -11,12 +11,12 @@ N 150 -380 410 -380 {lab=VDD}
 N 150 -260 410 -260 {lab=out}
 N 410 -320 410 -260 {lab=out}
 N 280 -390 280 -380 {lab=VDD}
-N 280 -200 280 -190 {lab=GND}
+N 280 -200 280 -190 {lab=VSS}
 N 150 -290 170 -290 {lab=VDD}
 N 170 -380 170 -290 {lab=VDD}
 N 150 -350 170 -350 {lab=VDD}
 N 390 -350 410 -350 {lab=BP}
-N 280 -230 280 -200 {lab=GND}
+N 280 -230 280 -200 {lab=VSS}
 N 350 -350 390 -350 {lab=BP}
 N 450 -450 450 -350 {lab=in}
 N 450 -470 450 -450 {lab=in}
@@ -25,7 +25,8 @@ N 110 -470 110 -350 {lab=in}
 C {title.sym} 170 -40 0 0 {name=l1 author="Timonas Juonys"}
 C {ipin.sym} 110 -350 0 0 {name=p3 lab=in}
 C {opin.sym} 410 -260 0 0 {name=p4 lab=out}
-C {iopin.sym} 280 -190 1 0 {name=p5 lab=GND}
+C {iopin.sym} 280 -190 1 0 {name=p5 lab=VSS
+}
 C {gf180mcu_fd_pr/nfet_03v3.sym} 260 -230 0 0 {name=M1
 L=1.12u
 W=0.22u

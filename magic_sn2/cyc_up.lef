@@ -1,0 +1,67 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO cyc_up
+  CLASS core ;
+  FOREIGN cyc_up ;
+  ORIGIN 1.115 0.190 ;
+  SIZE 8.360 BY 4.945 ;
+  SITE site056um ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 6.720 0.140 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 6.720 4.620 ;
+    END
+  END VDD
+  PIN out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246400 ;
+    ANTENNADIFFAREA 0.522800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.300 0.420 6.580 4.060 ;
+    END
+  END out
+  PIN VB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.180 0.980 6.020 1.260 ;
+    END
+  END VB
+  PIN in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.576400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.820 2.660 3.220 2.940 ;
+    END
+  END in
+  OBS
+      LAYER Nwell ;
+        RECT -1.115 -0.190 7.245 4.755 ;
+      LAYER Metal1 ;
+        RECT 0.145 3.240 6.000 4.040 ;
+        RECT 0.145 2.360 1.520 3.240 ;
+        RECT 3.520 2.360 6.000 3.240 ;
+        RECT 0.145 1.560 6.000 2.360 ;
+        RECT 0.145 0.680 4.880 1.560 ;
+        RECT 0.145 0.440 6.000 0.680 ;
+  END
+END cyc_up
+END LIBRARY
+

@@ -1,0 +1,50 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO TIEH
+  CLASS core ;
+  FOREIGN TIEH ;
+  ORIGIN 0.115 0.190 ;
+  SIZE 2.230 BY 4.945 ;
+  SITE site056um ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 1.680 0.140 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 1.680 4.620 ;
+    END
+  END VDD
+  PIN Z
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.195800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.400 1.540 1.680 2.380 ;
+    END
+  END Z
+  OBS
+      LAYER Nwell ;
+        RECT -0.115 1.135 2.115 4.755 ;
+      LAYER Pwell ;
+        RECT -0.115 -0.190 1.830 1.135 ;
+      LAYER Nwell ;
+        RECT 1.830 -0.190 2.115 1.135 ;
+      LAYER Metal1 ;
+        RECT 0.510 2.680 1.690 4.040 ;
+        RECT 0.510 1.240 1.100 2.680 ;
+        RECT 0.510 0.440 1.690 1.240 ;
+  END
+END TIEH
+END LIBRARY
+

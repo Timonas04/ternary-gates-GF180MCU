@@ -1,0 +1,78 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO NMIN
+  CLASS core ;
+  FOREIGN NMIN ;
+  ORIGIN 0.155 0.190 ;
+  SIZE 5.720 BY 4.945 ;
+  SITE site056um ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 5.040 0.140 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 5.040 4.620 ;
+    END
+  END VDD
+  PIN VB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.500 0.980 4.340 1.260 ;
+    END
+  END VB
+  PIN out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246400 ;
+    ANTENNADIFFAREA 0.612800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.620 0.420 4.900 3.500 ;
+    END
+  END out
+  PIN a
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.453200 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.260 3.220 2.100 3.500 ;
+    END
+  END a
+  PIN b
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.453200 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.940 2.660 3.220 3.500 ;
+    END
+  END b
+  OBS
+      LAYER Nwell ;
+        RECT -0.155 -0.190 5.565 4.755 ;
+      LAYER Metal1 ;
+        RECT 0.525 3.800 4.875 4.040 ;
+        RECT 0.525 2.920 0.960 3.800 ;
+        RECT 2.400 2.920 2.640 3.800 ;
+        RECT 0.525 2.360 2.640 2.920 ;
+        RECT 3.520 2.360 4.320 3.800 ;
+        RECT 0.525 1.560 4.320 2.360 ;
+        RECT 0.525 0.680 3.200 1.560 ;
+        RECT 0.525 0.440 4.320 0.680 ;
+  END
+END NMIN
+END LIBRARY
+

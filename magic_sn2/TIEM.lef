@@ -1,0 +1,58 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO TIEM
+  CLASS core ;
+  FOREIGN TIEM ;
+  ORIGIN 0.085 0.190 ;
+  SIZE 3.780 BY 4.945 ;
+  SITE site056um ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 3.360 0.140 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 3.360 4.620 ;
+    END
+  END VDD
+  PIN Z
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246400 ;
+    ANTENNADIFFAREA 0.303200 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.940 0.420 3.220 2.940 ;
+    END
+  END Z
+  PIN VB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.820 0.980 2.660 1.260 ;
+    END
+  END VB
+  OBS
+      LAYER Nwell ;
+        RECT -0.085 1.135 3.695 4.755 ;
+      LAYER Pwell ;
+        RECT -0.085 -0.190 3.695 1.135 ;
+      LAYER Metal1 ;
+        RECT 0.445 3.240 3.195 4.040 ;
+        RECT 0.445 1.560 2.640 3.240 ;
+        RECT 0.445 0.680 1.520 1.560 ;
+        RECT 0.445 0.440 2.640 0.680 ;
+  END
+END TIEM
+END LIBRARY
+

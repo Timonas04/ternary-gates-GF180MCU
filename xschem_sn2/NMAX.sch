@@ -5,8 +5,8 @@ V {}
 S {}
 F {}
 E {}
-N 360 -170 360 -160 {lab=GND}
-N 360 -200 360 -170 {lab=GND}
+N 360 -170 360 -160 {lab=VSS}
+N 360 -200 360 -170 {lab=VSS}
 N 210 -410 490 -410 {lab=VDD}
 N 210 -320 240 -320 {lab=VDD}
 N 240 -410 240 -320 {lab=VDD}
@@ -94,7 +94,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {iopin.sym} 360 -160 1 0 {name=p1 lab=GND}
+C {iopin.sym} 360 -160 1 0 {name=p1 lab=VSS}
 C {gf180mcu_fd_pr/nfet_03v3.sym} 340 -200 0 0 {name=M10
 L=1.12u
 W=0.22u

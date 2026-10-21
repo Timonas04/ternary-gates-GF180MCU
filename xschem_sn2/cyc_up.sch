@@ -16,14 +16,14 @@ N 980 -300 980 -210 {lab=VDD}
 N 980 -270 1000 -270 {lab=VDD}
 N 740 -270 760 -270 {lab=BP}
 N 760 -270 800 -270 {lab=BP}
-N 100 -240 100 -230 {lab=GND}
-N 100 -270 100 -240 {lab=GND}
+N 100 -240 100 -230 {lab=VSS}
+N 100 -270 100 -240 {lab=VSS}
 N 100 -360 100 -330 {lab=VDD}
 N 100 -380 100 -360 {lab=VDD}
-N 100 -230 100 -220 {lab=GND}
-N 420 -210 420 -200 {lab=GND}
-N 420 -240 420 -210 {lab=GND}
-N 420 -200 420 -190 {lab=GND}
+N 100 -230 100 -220 {lab=VSS}
+N 420 -210 420 -200 {lab=VSS}
+N 420 -240 420 -210 {lab=VSS}
+N 420 -200 420 -190 {lab=VSS}
 N 300 -270 420 -270 {lab=#net1}
 N 420 -270 550 -270 {lab=#net1}
 N 100 -300 260 -300 {lab=#net2}
@@ -32,12 +32,12 @@ N 510 -300 550 -300 {lab=BP}
 N 300 -300 350 -300 {lab=BP}
 N 420 -340 420 -330 {lab=VDD}
 N 550 -270 700 -270 {lab=#net1}
-N 870 -120 870 -110 {lab=GND}
-N 870 -150 870 -120 {lab=GND}
-N 870 -110 870 -100 {lab=GND}
+N 870 -120 870 -110 {lab=VSS}
+N 870 -150 870 -120 {lab=VSS}
+N 870 -110 870 -100 {lab=VSS}
 C {title.sym} 170 -40 0 0 {name=l1 author="Timonas Juonys"}
 C {ipin.sym} 70 -570 0 0 {name=p3 lab=in}
-C {iopin.sym} 270 -550 2 1 {name=p5 lab=GND}
+C {iopin.sym} 270 -550 2 1 {name=p5 lab=VSS}
 C {gf180mcu_fd_pr/pfet_03v3.sym} 1020 -270 0 1 {name=M2
 L=0.28u
 W=0.44u
@@ -85,7 +85,7 @@ C {ipin.sym} 70 -590 0 0 {name=p7 lab=BP}
 C {ipin.sym} 70 -550 0 0 {name=p8 lab=VB}
 C {gf180mcu_fd_pr/nfet_03v3.sym} 80 -270 0 0 {name=M8
 L=1.12u
-W=0.22u
+W=0.28u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -111,7 +111,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 100 -220 0 0 {name=p9 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 100 -220 0 0 {name=p9 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 60 -270 0 0 {name=p10 sig_type=std_logic lab=VB}
 C {lab_pin.sym} 100 -380 2 1 {name=p11 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 60 -330 0 0 {name=p12 sig_type=std_logic lab=in}
@@ -129,7 +129,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 420 -190 0 0 {name=p1 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 420 -190 0 0 {name=p1 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 380 -240 0 0 {name=p2 sig_type=std_logic lab=VB}
 C {lab_pin.sym} 510 -300 0 0 {name=p13 sig_type=std_logic lab=BP}
 C {lab_pin.sym} 350 -300 0 1 {name=p14 sig_type=std_logic lab=BP}
@@ -149,7 +149,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 870 -100 0 0 {name=p17 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 870 -100 0 0 {name=p17 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 830 -150 0 0 {name=p18 sig_type=std_logic lab=VB}
 C {lab_pin.sym} 1040 -270 0 1 {name=p19 sig_type=std_logic lab=in}
 C {lab_pin.sym} 870 -310 2 1 {name=p20 sig_type=std_logic lab=VDD}
@@ -161,7 +161,7 @@ C {lab_pin.sym} 70 -550 0 1 {name=p24 sig_type=std_logic lab=VB}
 C {lab_pin.sym} 70 -590 0 1 {name=p25 sig_type=std_logic lab=BP}
 C {lab_pin.sym} 270 -590 2 1 {name=p26 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 270 -570 0 0 {name=p27 sig_type=std_logic lab=out}
-C {lab_pin.sym} 270 -550 0 0 {name=p28 sig_type=std_logic lab=GND}
+C {lab_pin.sym} 270 -550 0 0 {name=p28 sig_type=std_logic lab=VSS}
 C {gf180mcu_fd_pr/pfet_06v0.sym} 280 -300 0 0 {name=M5
 L=1.1u
 W=0.30u

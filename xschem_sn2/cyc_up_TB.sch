@@ -7,7 +7,7 @@ F {}
 E {}
 B 2 1400 -620 2200 -220 {flags=graph
 y1=0
-y2=3.3
+y2=3.7
 ypos1=0
 ypos2=2
 divy=5
@@ -28,8 +28,8 @@ color="4 12"
 node="in
 out"}
 B 2 1400 -1020 2200 -620 {flags=graph
-y1=-1.2e-05
-y2=7.3e-06
+y1=-1.8e-06
+y2=1.9e-05
 ypos1=0
 ypos2=2
 divy=5
@@ -57,6 +57,7 @@ C {code_shown.sym} 26.74901121701339 -431.7671459816082 0 0 {name=s1 only_toplev
 
 Vdd VDD 0 3.3
 Vbp BP VDD 2.7
+Vbias VB 0 1
 
 Vin in 0 PWL(0 0 89.9n 0 90.1n 1.4 179.9n 1.4 180.1n 3.3 270n 3.3)
 

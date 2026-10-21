@@ -6,15 +6,15 @@ S {}
 F {}
 E {}
 N 390 -350 390 -340 {lab=VDD}
-N 390 -160 390 -150 {lab=GND}
-N 390 -190 390 -160 {lab=GND}
+N 390 -160 390 -150 {lab=VSS}
+N 390 -190 390 -160 {lab=VSS}
 N 180 -220 390 -220 {lab=out}
 N 90 -340 320 -340 {lab=VDD}
 N 320 -340 450 -340 {lab=VDD}
 N 450 -340 670 -340 {lab=VDD}
 N 360 -310 410 -310 {lab=a}
-N 90 -280 180 -280 {lab=#net4}
-N 180 -280 320 -280 {lab=#net4}
+N 90 -280 180 -280 {lab=#net1}
+N 180 -280 320 -280 {lab=#net1}
 N 450 -280 670 -280 {lab=out}
 N 390 -220 570 -220 {lab=out}
 N 570 -280 570 -220 {lab=out}
@@ -109,7 +109,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {iopin.sym} 390 -150 1 0 {name=p3 lab=GND}
+C {iopin.sym} 390 -150 1 0 {name=p3 lab=VSS}
 C {gf180mcu_fd_pr/nfet_03v3.sym} 370 -190 0 0 {name=M12
 L=1.12u
 W=0.22u

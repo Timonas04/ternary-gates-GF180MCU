@@ -223,7 +223,7 @@ C {ipin.sym} 90 -380 0 0 {name=p18 lab=D}
 C {ipin.sym} 90 -360 0 0 {name=p19 lab=clk}
 C {iopin.sym} 240 -400 0 0 {name=p84 lab=VDD}
 C {opin.sym} 240 -380 0 0 {name=p85 lab=Q}
-C {iopin.sym} 240 -340 0 0 {name=p86 lab=GND}
+C {iopin.sym} 240 -340 0 0 {name=p86 lab=VSS}
 C {lab_pin.sym} 240 -400 0 0 {name=p87 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 240 -380 0 0 {name=p88 sig_type=std_logic lab=Q}
 C {lab_pin.sym} 240 -340 0 0 {name=p89 sig_type=std_logic lab=GND}

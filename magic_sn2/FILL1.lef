@@ -1,0 +1,35 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO FILL1
+  CLASS core ;
+  FOREIGN FILL1 ;
+  ORIGIN 0.150 0.190 ;
+  SIZE 0.860 BY 4.945 ;
+  SITE site056um ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 0.560 0.140 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 0.560 4.620 ;
+    END
+  END VDD
+  OBS
+      LAYER Nwell ;
+        RECT -0.150 1.135 0.710 4.755 ;
+      LAYER Pwell ;
+        RECT -0.150 -0.190 0.710 1.135 ;
+  END
+END FILL1
+END LIBRARY
+
