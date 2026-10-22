@@ -1,0 +1,46 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO ANTENNA
+  CLASS core ;
+  FOREIGN ANTENNA ;
+  ORIGIN 0.385 0.190 ;
+  SIZE 1.335 BY 4.945 ;
+  SITE site056um ;
+  PIN Z
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.413800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.140 0.420 0.420 2.380 ;
+    END
+  END Z
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 0.560 0.140 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 0.560 4.620 ;
+    END
+  END VDD
+  OBS
+      LAYER Nwell ;
+        RECT -0.385 1.135 0.950 4.755 ;
+      LAYER Pwell ;
+        RECT -0.385 -0.190 0.945 1.135 ;
+      LAYER Nwell ;
+        RECT 0.945 -0.190 0.950 1.135 ;
+  END
+END ANTENNA
+END LIBRARY
+

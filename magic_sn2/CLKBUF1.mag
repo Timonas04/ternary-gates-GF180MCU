@@ -1,0 +1,122 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1792675614
+<< nwell >>
+rect -83 632 551 951
+rect -83 252 510 512
+<< pwell >>
+rect -44 222 272 227
+rect 277 222 510 227
+rect -44 -38 510 222
+<< nmos >>
+rect 112 108 168 152
+rect 280 108 336 152
+<< pmos >>
+rect 112 338 168 426
+rect 280 338 336 426
+<< ndiff >>
+rect 20 153 92 166
+rect 20 107 33 153
+rect 79 152 92 153
+rect 188 153 260 166
+rect 188 152 201 153
+rect 79 108 112 152
+rect 168 108 201 152
+rect 79 107 92 108
+rect 20 94 92 107
+rect 188 107 201 108
+rect 247 152 260 153
+rect 356 153 428 166
+rect 356 152 369 153
+rect 247 108 280 152
+rect 336 108 369 152
+rect 247 107 260 108
+rect 188 94 260 107
+rect 356 107 369 108
+rect 415 107 428 153
+rect 356 94 428 107
+<< pdiff >>
+rect 24 397 112 426
+rect 24 351 37 397
+rect 83 351 112 397
+rect 24 338 112 351
+rect 168 413 280 426
+rect 168 367 201 413
+rect 247 367 280 413
+rect 168 338 280 367
+rect 336 397 424 426
+rect 336 351 365 397
+rect 411 351 424 397
+rect 336 338 424 351
+<< ndiffc >>
+rect 33 107 79 153
+rect 201 107 247 153
+rect 369 107 415 153
+<< pdiffc >>
+rect 37 351 83 397
+rect 201 367 247 413
+rect 365 351 411 397
+<< polysilicon >>
+rect 96 505 168 518
+rect 96 459 109 505
+rect 155 459 168 505
+rect 96 446 168 459
+rect 112 426 168 446
+rect 280 426 336 470
+rect 112 152 168 338
+rect 280 281 336 338
+rect 259 268 336 281
+rect 259 222 272 268
+rect 318 222 336 268
+rect 259 209 336 222
+rect 112 64 168 108
+rect 280 152 336 209
+rect 280 64 336 108
+<< polycontact >>
+rect 109 459 155 505
+rect 272 222 318 268
+<< metal1 >>
+rect 0 868 448 924
+rect 28 532 166 588
+rect 98 505 166 532
+rect 98 459 109 505
+rect 155 459 166 505
+rect 212 413 280 868
+rect 33 397 83 408
+rect 33 351 37 397
+rect 190 367 201 413
+rect 247 367 280 413
+rect 190 356 280 367
+rect 364 397 420 476
+rect 33 340 83 351
+rect 364 351 365 397
+rect 411 351 420 397
+rect 33 268 79 340
+rect 272 268 318 279
+rect 33 222 272 268
+rect 33 153 79 222
+rect 272 211 318 222
+rect 33 96 79 107
+rect 201 153 247 164
+rect 201 28 247 107
+rect 364 153 420 351
+rect 364 107 369 153
+rect 415 107 420 153
+rect 364 84 420 107
+rect 0 -28 448 28
+<< labels >>
+rlabel metal1 0 -28 448 28 0 VSS
+port 1 nsew ground bidirectional
+rlabel metal1 364 84 420 476 0 out
+port 2 nsew clock output
+rlabel metal1 0 868 448 924 0 VDD
+port 3 nsew power bidirectional
+rlabel metal1 28 532 84 588 0 in
+port 4 nsew clock input
+<< properties >>
+string fixed_BBOX 0 0 448 896
+string LEF class
+string LEFclass core
+string LEFsite site056um
+<< end >>

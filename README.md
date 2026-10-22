@@ -11,7 +11,7 @@ These gates should be enough to get layouts startet, in addition to cells not in
 
 Xschem files and testbenches are stored in xschem_sn2 folder, and magic VLSI files are stored in magic_sn2 folder. After the design the files are moved to librelane directory which is backed up in a nother repository. That repository (soon)has everything needed to do generate the layout, this repository covers the intermediary files. 
 <br>
-Status: all gates in the list have xschem schematics and testbenches. Layouts are done except for FF, antenna, endcap, tap, buffer, buffer_clk. Non logic gate cells needed: TIEL, TIEH, TIEM, TAP, ANTENNA, ENDCAP, BUFFER, BUFFER_CLK
+Status: all gates in the list have xschem schematics and testbenches. Layouts are all done including non netlist cells: TIEL, TIEH, TIEM, TAP, ANTENNA, ENDCAP, BUFFER, BUFFER_CLK
 <br>
 <br>
 <br>

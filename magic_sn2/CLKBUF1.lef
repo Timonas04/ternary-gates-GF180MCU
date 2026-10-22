@@ -1,0 +1,56 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO CLKBUF1
+  CLASS core ;
+  FOREIGN CLKBUF1 ;
+  ORIGIN 0.415 0.190 ;
+  SIZE 3.170 BY 4.945 ;
+  SITE site056um ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 2.240 0.140 ;
+    END
+  END VSS
+  PIN out
+    DIRECTION OUTPUT ;
+    USE CLOCK ;
+    ANTENNADIFFAREA 0.345200 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.820 0.420 2.100 2.380 ;
+    END
+  END out
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 2.240 4.620 ;
+    END
+  END VDD
+  PIN in
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    ANTENNAGATEAREA 0.184800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.140 2.660 0.830 2.940 ;
+    END
+  END in
+  OBS
+      LAYER Nwell ;
+        RECT -0.415 -0.190 2.755 4.755 ;
+      LAYER Metal1 ;
+        RECT 0.165 3.240 1.590 4.040 ;
+        RECT 1.130 2.680 1.590 3.240 ;
+        RECT 1.130 2.360 1.520 2.680 ;
+        RECT 0.165 0.440 1.520 2.360 ;
+  END
+END CLKBUF1
+END LIBRARY
+

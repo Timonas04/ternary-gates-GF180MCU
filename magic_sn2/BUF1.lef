@@ -1,0 +1,69 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO BUF1
+  CLASS core ;
+  FOREIGN BUF1 ;
+  ORIGIN 0.275 0.190 ;
+  SIZE 6.150 BY 4.945 ;
+  SITE site056um ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 5.600 0.140 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 5.600 4.620 ;
+    END
+  END VDD
+  PIN out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246400 ;
+    ANTENNADIFFAREA 0.522800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.180 0.420 5.460 4.060 ;
+    END
+  END out
+  PIN VB
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.492800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.060 0.980 4.340 1.260 ;
+    END
+  END VB
+  PIN in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.453200 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.820 2.660 2.100 3.500 ;
+    END
+  END in
+  OBS
+      LAYER Nwell ;
+        RECT -0.275 -0.190 5.875 4.755 ;
+      LAYER Metal1 ;
+        RECT 0.415 3.800 4.880 4.040 ;
+        RECT 0.415 2.360 1.520 3.800 ;
+        RECT 2.400 2.360 4.880 3.800 ;
+        RECT 0.415 1.560 4.880 2.360 ;
+        RECT 0.415 0.680 3.760 1.560 ;
+        RECT 4.640 0.680 4.880 1.560 ;
+        RECT 0.415 0.440 4.880 0.680 ;
+  END
+END BUF1
+END LIBRARY
+
