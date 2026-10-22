@@ -1,0 +1,103 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO FF
+  CLASS core ;
+  FOREIGN FF ;
+  ORIGIN 0.000 0.140 ;
+  SIZE 20.125 BY 9.240 ;
+  SITE site056um ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 8.820 19.600 9.100 ;
+    END
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 -0.140 19.600 0.140 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.000 4.340 7.075 4.620 ;
+    END
+  END VDD
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.906400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.820 3.220 2.100 4.060 ;
+    END
+  END D
+  PIN VB
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 2.217600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 10.220 0.980 10.500 7.980 ;
+    END
+  END VB
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 1.091200 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.060 0.420 4.900 0.700 ;
+    END
+  END clk
+  PIN nQ
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.699600 ;
+    ANTENNADIFFAREA 0.612800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 19.180 5.460 19.460 8.540 ;
+    END
+  END nQ
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.699600 ;
+    ANTENNADIFFAREA 0.612800 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 19.180 0.420 19.460 3.500 ;
+    END
+  END Q
+  OBS
+      LAYER Pwell ;
+        RECT 0.000 7.825 20.125 9.100 ;
+      LAYER Nwell ;
+        RECT 0.000 1.135 20.125 7.825 ;
+      LAYER Pwell ;
+        RECT 0.000 -0.140 20.125 1.135 ;
+      LAYER Metal1 ;
+        RECT 0.665 5.160 18.880 8.520 ;
+        RECT 0.665 4.920 19.600 5.160 ;
+        RECT 7.375 4.040 19.600 4.920 ;
+        RECT 0.665 2.920 1.520 4.040 ;
+        RECT 2.400 3.800 19.600 4.040 ;
+        RECT 2.400 2.920 18.880 3.800 ;
+        RECT 0.665 1.000 18.880 2.920 ;
+        RECT 0.665 0.440 3.760 1.000 ;
+        RECT 5.200 0.440 18.880 1.000 ;
+      LAYER Metal2 ;
+        RECT 4.060 2.540 9.920 5.875 ;
+        RECT 10.800 2.540 18.340 5.875 ;
+      LAYER Metal3 ;
+        RECT 4.010 2.660 13.910 2.940 ;
+  END
+END FF
+END LIBRARY
+

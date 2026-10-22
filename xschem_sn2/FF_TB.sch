@@ -24,8 +24,9 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=4
-node=Q}
+color="4 6"
+node="Q
+nQ_par"}
 B 2 1310 -990 2110 -590 {flags=graph
 y1=0
 y2=3.3
@@ -50,7 +51,7 @@ node="D
 clk"}
 B 2 1310 -1390 2110 -990 {flags=graph
 y1=-4.2e-05
-y2=0.00011
+y2=0.00012
 ypos1=0
 ypos2=2
 divy=5
@@ -67,8 +68,30 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color=12
-node=i(vmeas)}
+color="12 6"
+node="i(vmeas)
+i(vmeas1)"}
+B 2 2110 -590 2910 -190 {flags=graph
+y1=-0.0048
+y2=3.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=6.15e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+legendmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=4
+node=Q_par}
 C {title.sym} 170 -40 0 0 {name=l1 author="Timonas Juonys"}
 C {gnd.sym} 1060 -470 0 0 {name=l2 lab=0}
 C {launcher.sym} 1370 -170 0 0 {name=
@@ -77,6 +100,7 @@ tclcommand="xschem raw_read $netlist_dir/FF_TB.raw tran"
 }
 C {code.sym} 130 -380 0 0 {name=s2 only_toplevel=false value="
 .option temp=27
+.include FF_ext.spice
 .include /usr/local/share/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /usr/local/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 
@@ -102,3 +126,15 @@ C {ammeter.sym} 1060 -560 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {xschem_sn2/FF.sym} 910 -500 0 0 {name=x1}
 C {lab_pin.sym} 760 -470 0 0 {name=p57 sig_type=std_logic lab=VB}
 C {lab_pin.sym} 760 -530 0 0 {name=p58 sig_type=std_logic lab=BP}
+C {gnd.sym} 1060 -710 0 0 {name=l3 lab=0}
+C {lab_pin.sym} 760 -730 0 0 {name=p6 sig_type=std_logic lab=clk}
+C {lab_pin.sym} 760 -750 0 0 {name=p7 sig_type=std_logic lab=D}
+C {lab_pin.sym} 1060 -750 0 1 {name=p8 sig_type=std_logic lab=Q_par}
+C {lab_pin.sym} 1060 -730 0 1 {name=p9 sig_type=std_logic lab=nQ_par}
+C {lab_pin.sym} 1060 -830 0 1 {name=p10 sig_type=std_logic lab=VDD}
+C {ammeter.sym} 1060 -800 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
+C {xschem_sn2/FF.sym} 910 -740 0 0 {   type=subcircuit
+   format="@name @pinlist FF_ext"
+   template="name=x2"}
+C {lab_pin.sym} 760 -710 0 0 {name=p11 sig_type=std_logic lab=VB}
+C {lab_pin.sym} 760 -770 0 0 {name=p12 sig_type=std_logic lab=BP}
