@@ -24,6 +24,7 @@ library(tern_nmos_load) {
   voltage_map(VDD, 5);
   voltage_map(VSS, 0);
   voltage_map(VPW, 0);
+  voltage_map(VB, 1);
 
   operating_conditions(gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00) { 
     process : 1 ; 
@@ -116,16 +117,115 @@ library(tern_nmos_load) {
   }
 
 
+	cell (STI) {
+	    area : 12.544;
+	    pg_pin (VDD) { pg_type : primary_power;  voltage_name : "VDD"; }
+        pg_pin (VSS) { pg_type : primary_ground; voltage_name : "VSS"; }
+        pin (VB) { direction : input; capacitance : 0.001; }
+	    pin (in) { direction : input;  capacitance : 0.001; }
+	    pin (out) { direction : output; }
+        }
+		
+	cell (cyc_up) {
+	    area : 30.106;
+	    pg_pin (VDD) { pg_type : primary_power;  voltage_name : "VDD"; }
+        pg_pin (VSS) { pg_type : primary_ground; voltage_name : "VSS"; }
+        pin (VB) { direction : input; capacitance : 0.001; }
+	    pin (in) { direction : input;  capacitance : 0.001; }
+	    pin (out) { direction : output; }
+        }
+
+	cell (NMIN) {
+	    area : 20.07;
+	    pg_pin (VDD) { pg_type : primary_power;  voltage_name : "VDD"; }
+        pg_pin (VSS) { pg_type : primary_ground; voltage_name : "VSS"; }
+        pin (VB) { direction : input; capacitance : 0.001; }
+	    pin (a) { direction : input;  capacitance : 0.001; }
+	    pin (b) { direction : input;  capacitance : 0.001; }
+	    pin (out) { direction : output; }
+        }
+
 	cell (NMAX) {
-	  area : 20.07;
-	  pg_pin (VDD) { pg_type : primary_power;  voltage_name : "VDD"; }
-	  pg_pin (GND) { pg_type : primary_ground; voltage_name : "GND"; }
-	  pin (a) { direction : input;  capacitance : 0.001; }
-	  pin (b) { direction : input;  capacitance : 0.001; }
-	  pin (out) { direction : output; }
-	}
+	    area : 20.07;
+	    pg_pin (VDD) { pg_type : primary_power;  voltage_name : "VDD"; }
+        pg_pin (VSS) { pg_type : primary_ground; voltage_name : "VSS"; }
+        pin (VB) { direction : input; capacitance : 0.001; }
+	    pin (a) { direction : input;  capacitance : 0.001; }
+	    pin (b) { direction : input;  capacitance : 0.001; }
+	    pin (out) { direction : output; }
+        }
 
+	cell (FF) {
+	    area : 175.616;
+	    pg_pin (VDD) { pg_type : primary_power;  voltage_name : "VDD"; }
+        pg_pin (VSS) { pg_type : primary_ground; voltage_name : "VSS"; }
+        pin (VB) { direction : input; capacitance : 0.001; }
+	    pin (clk) { direction : input;  capacitance : 0.001; }
+	    pin (D) { direction : input;  capacitance : 0.001; }
+	    pin (Q) { direction : output; }
+	    pin (nQ) { direction : output; }
+        }
 
+	cell (BUF1) {
+	    area : 25.088;
+	    pg_pin (VDD) { pg_type : primary_power;  voltage_name : "VDD"; }
+        pg_pin (VSS) { pg_type : primary_ground; voltage_name : "VSS"; }
+        pg_pin (VB) { pg_type : primary_power;  voltage_name : "VB"; }
+	    pin (in) { direction : input;  capacitance : 0.001; }
+	    pin (out) { direction : output;}
+		}
+	
+	cell (CLKBUF1) {
+	    area : 10.035;
+	    pg_pin (VDD) { pg_type : primary_power;  voltage_name : "VDD"; }
+        pg_pin (VSS) { pg_type : primary_ground; voltage_name : "VSS"; }
+	    pin (in) { direction : input;  capacitance : 0.001; }
+	    pin (out) { direction : output;}
+		}
+
+    cell (TIEL) {
+        area : 7.526;
+        pg_pin (VDD) { voltage_name : VDD; pg_type : primary_power; }
+        pg_pin (VSS) { voltage_name : VSS; pg_type : primary_ground; }
+        pin (Z) { direction : output;}
+        }
+
+    cell (TIEM) {
+        area : 7.526;
+        pg_pin (VDD) { voltage_name : VDD; pg_type : primary_power; }
+        pg_pin (VSS) { voltage_name : VSS; pg_type : primary_ground; }
+        pin (Z) { direction : output;}
+        }
+
+    cell (TIEH) {
+        area : 7.526;
+        pg_pin (VDD) { voltage_name : VDD; pg_type : primary_power; }
+        pg_pin (VSS) { voltage_name : VSS; pg_type : primary_ground; }
+        pin (Z) { direction : output;}
+        }
+
+    cell (TAP_CELL) {
+        area : 2.5088;
+        dont_use : true;
+        pg_pin (VDD) { voltage_name : VDD; pg_type : primary_power;}
+        pg_pin (VSS) { voltage_name : GND; pg_type : primary_ground;}
+        pg_pin (BP)  { voltage_name : BP;  pg_type : primary_power;}
+        }
+
+    cell (FILL1) {
+        area : 2.5088;
+        dont_use : true;
+        pg_pin (VDD) { voltage_name : VDD; pg_type : primary_power; }
+        pg_pin (VSS) { voltage_name : GND; pg_type : primary_ground; }
+        }
+
+    cell (endcap) {
+        area : 2.5088;
+        dont_use : true;
+        pg_pin (VDD) { voltage_name : VDD; pg_type : primary_power; }
+        pg_pin (VSS) { voltage_name : VSS; pg_type : primary_ground; }
+		pg_pin (BP)  { voltage_name : BP;  pg_type : primary_power;}
+        }
 
 /*--------EOF---------*/
 

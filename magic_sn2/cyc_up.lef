@@ -5,8 +5,8 @@ VERSION 5.7 ;
 MACRO cyc_up
   CLASS core ;
   FOREIGN cyc_up ;
-  ORIGIN 1.115 0.190 ;
-  SIZE 8.360 BY 4.945 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 6.720 BY 4.480 ;
   SITE site056um ;
   PIN VSS
     DIRECTION INOUT ;
@@ -34,14 +34,6 @@ MACRO cyc_up
         RECT 6.300 0.420 6.580 4.060 ;
     END
   END out
-  PIN VB
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER Metal1 ;
-        RECT 5.180 0.980 6.020 1.260 ;
-    END
-  END VB
   PIN in
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -51,9 +43,23 @@ MACRO cyc_up
         RECT 1.820 2.660 3.220 2.940 ;
     END
   END in
+  PIN VB
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.739200 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.180 0.980 6.020 1.260 ;
+    END
+  END VB
   OBS
       LAYER Nwell ;
-        RECT -1.115 -0.190 7.245 4.755 ;
+        RECT -1.115 3.160 7.245 4.755 ;
+        RECT 0.000 2.560 6.720 3.160 ;
+        RECT -0.720 1.260 7.050 2.560 ;
+        RECT 0.000 1.135 6.720 1.260 ;
+      LAYER Pwell ;
+        RECT -0.045 -0.190 7.000 1.135 ;
       LAYER Metal1 ;
         RECT 0.145 3.240 6.000 4.040 ;
         RECT 0.145 2.360 1.520 3.240 ;

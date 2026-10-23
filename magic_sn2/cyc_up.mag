@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1792489722
+timestamp 1792759223
 << nwell >>
 rect -223 632 1449 951
 rect -144 252 1410 512
@@ -149,12 +149,13 @@ rect 208 294 264 338
 rect 886 294 942 338
 rect 1008 324 1232 368
 rect 208 231 1232 244
-rect 208 186 1021 231
+rect 208 186 1050 231
 rect 208 152 432 186
 rect 208 64 432 108
 rect 672 152 896 186
-rect 1008 185 1021 186
-rect 1214 185 1232 231
+rect 1008 185 1050 186
+rect 1096 185 1144 231
+rect 1190 185 1232 231
 rect 672 64 896 108
 rect 1008 152 1232 185
 rect 1008 64 1232 108
@@ -166,7 +167,8 @@ rect 375 500 421 546
 rect 469 500 515 546
 rect 563 500 609 546
 rect 1168 456 1214 502
-rect 1021 185 1214 231
+rect 1050 185 1096 231
+rect 1144 185 1190 231
 << metal1 >>
 rect 0 868 1344 924
 rect 29 811 75 868
@@ -212,9 +214,11 @@ rect 1260 413 1316 456
 rect 1260 367 1265 413
 rect 1311 367 1316 413
 rect 811 340 857 351
-rect 1036 242 1204 252
-rect 1021 231 1214 242
-rect 1021 174 1214 185
+rect 1036 231 1204 252
+rect 1036 185 1050 231
+rect 1096 185 1144 231
+rect 1190 185 1204 231
+rect 1036 174 1204 185
 rect 118 107 129 153
 rect 175 107 186 153
 rect 270 107 465 153
@@ -236,11 +240,12 @@ rlabel metal1 0 868 1344 924 0 VDD
 port 2 nsew power bidirectional
 rlabel metal1 1260 84 1316 812 0 out
 port 3 nsew signal output
-rlabel metal1 1036 196 1204 252 0 VB
-port 4 nsew power bidirectional
 rlabel metal1 364 532 644 588 0 in
 port 5 nsew signal input
+rlabel metal1 1036 196 1204 252 0 VB
+port 6 nsew signal input
 << properties >>
+string FIXED_BBOX 0 0 1344 896
 string fixed_BBOX 0 0 1344 896
 string LEFclass core
 string LEFsite site056um

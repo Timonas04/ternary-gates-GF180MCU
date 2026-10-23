@@ -5,8 +5,8 @@ VERSION 5.7 ;
 MACRO FILL1
   CLASS core ;
   FOREIGN FILL1 ;
-  ORIGIN 0.150 0.190 ;
-  SIZE 0.860 BY 4.945 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 0.560 BY 4.480 ;
   SITE site056um ;
   PIN VSS
     DIRECTION INOUT ;
@@ -26,7 +26,10 @@ MACRO FILL1
   END VDD
   OBS
       LAYER Nwell ;
-        RECT -0.150 1.135 0.710 4.755 ;
+        RECT -0.150 3.160 0.710 4.755 ;
+        RECT 0.000 2.560 0.560 3.160 ;
+        RECT -0.150 1.260 0.710 2.560 ;
+        RECT 0.000 1.135 0.560 1.260 ;
       LAYER Pwell ;
         RECT -0.150 -0.190 0.710 1.135 ;
   END

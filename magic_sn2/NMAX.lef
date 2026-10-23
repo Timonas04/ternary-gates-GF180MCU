@@ -5,8 +5,8 @@ VERSION 5.7 ;
 MACRO NMAX
   CLASS core ;
   FOREIGN NMAX ;
-  ORIGIN 0.545 0.190 ;
-  SIZE 4.990 BY 4.945 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.920 BY 4.480 ;
   SITE site056um ;
   PIN VSS
     DIRECTION INOUT ;
@@ -34,14 +34,6 @@ MACRO NMAX
         RECT 3.500 0.420 3.780 4.060 ;
     END
   END out
-  PIN VB
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER Metal1 ;
-        RECT 2.380 0.980 3.220 1.260 ;
-    END
-  END VB
   PIN a
     DIRECTION INOUT ;
     USE SIGNAL ;
@@ -60,17 +52,27 @@ MACRO NMAX
         RECT 2.380 2.660 2.660 3.500 ;
     END
   END b
+  PIN VB
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.246400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.380 0.980 3.220 1.260 ;
+    END
+  END VB
   OBS
       LAYER Nwell ;
-        RECT -0.545 1.140 4.445 4.755 ;
+        RECT -0.545 3.160 4.445 4.755 ;
+        RECT 0.000 2.560 3.920 3.160 ;
+        RECT -0.545 1.260 4.250 2.560 ;
+        RECT 0.000 1.140 3.920 1.260 ;
       LAYER Pwell ;
         RECT -0.545 1.135 0.765 1.140 ;
       LAYER Nwell ;
-        RECT 0.765 1.135 4.445 1.140 ;
+        RECT 0.765 1.135 3.920 1.140 ;
       LAYER Pwell ;
         RECT -0.545 -0.190 4.200 1.135 ;
-      LAYER Nwell ;
-        RECT 4.200 -0.190 4.445 1.135 ;
       LAYER Metal1 ;
         RECT 0.125 3.800 3.200 4.040 ;
         RECT 0.125 2.360 0.400 3.800 ;
